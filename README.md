@@ -1,115 +1,145 @@
 Wipro Capstone Project
+Enterprise UI Automation Testing Framework using Playwright
 
-Playwright | JavaScript | Cross-Browser Testing | HTML Reporting
+Playwright | JavaScript | Cross-Browser Testing | HTML Reporting | POM Framework
 
-Project Overview
 
-This project is an enterprise-level UI Automation Testing Framework developed using Playwright for the SauceDemo (Swag Labs) e-commerce application. The framework validates important workflows such as login authentication, product sorting, cart management, checkout validation, order calculations, and cross-browser execution.
+PROJECT OVERVIEW
 
-Detail                    Info
+This project is a professional End-to-End UI Automation Testing Framework developed using Playwright for the SauceDemo (Swag Labs) e-commerce application.
 
-Target Site               https://www.saucedemo.com
-Framework                 Playwright v1.4x+
-Language                  JavaScript / TypeScript
-Pattern                   Page Object Model (POM)
-Reports                   Playwright HTML Report
-Browsers                  Chromium, Firefox, WebKit
-Total Tests               120 Test Cases
+The framework is designed to automate and validate critical business workflows including:
 
-Project Structure
+• User Authentication
+• Product Catalog Validation
+• Product Sorting
+• Shopping Cart Operations
+• Checkout Form Validation
+• Order Calculation Verification
+• Cross-Browser Execution
+
+The project follows industry-standard automation practices such as Page Object Model (POM), reusable components, parallel execution, and automated reporting.
+
+
+PROJECT DETAILS
+
+Target Website     : https://www.saucedemo.com
+Framework          : Playwright v1.4x+
+Programming        : JavaScript / TypeScript
+Design Pattern     : Page Object Model (POM)
+Browsers Tested    : Chromium, Firefox, WebKit
+Reporting          : Playwright HTML Report
+Total Test Cases   : 120+
+
+
+PROJECT STRUCTURE
 
 project/
-│
-├── pages/
-│   ├── LoginPage.js
-│   ├── ProductPage.js
-│   ├── CartPage.js
-│   ├── CheckoutPage.js
-│   └── OrderPage.js
-│
-├── tests/
-│   ├── auth.spec.js
-│   ├── product.spec.js
-│   ├── cart.spec.js
-│   ├── checkout.spec.js
-│   └── order.spec.js
-│
-├── utils/
-│   ├── helper.js
-│   └── testData.js
-│
-├── playwright.config.js
-├── package.json
-└── README.md
 
-Services & Test Coverage
+pages/
+   LoginPage.js
+   ProductPage.js
+   CartPage.js
+   CheckoutPage.js
+   OrderPage.js
+
+tests/
+   auth.spec.js
+   product.spec.js
+   cart.spec.js
+   checkout.spec.js
+   order.spec.js
+
+utils/
+   helper.js
+   testData.js
+
+playwright.config.js
+package.json
+README.md
+
+
+SERVICES & TEST COVERAGE
 
 1. Authentication & Security
-   - Valid login
-   - Invalid login
-   - Session handling
-   - Error validation
+   • Valid Login
+   • Invalid Login
+   • Session Handling
+   • Error Message Validation
 
 2. Product Catalog & Sorting
-   - Product sorting
-   - Product details
-   - Catalog validation
+   • Product Sorting
+   • Product Details Validation
+   • Catalog Verification
 
 3. Cart Operations
-   - Add/remove items
-   - Cart badge validation
+   • Add Product to Cart
+   • Remove Product from Cart
+   • Cart Badge Validation
 
 4. Checkout Validation
-   - Form validation
-   - Error message verification
+   • Form Validation
+   • Empty Field Validation
+   • Error Message Verification
 
 5. Order Calculations
-   - Subtotal validation
-   - Tax validation
-   - Total amount validation
+   • Subtotal Verification
+   • Tax Validation
+   • Final Total Verification
 
 6. Cross-Browser Testing
-   - Execution on Chromium
-   - Execution on Firefox
-   - Execution on WebKit
+   • Chromium Execution
+   • Firefox Execution
+   • WebKit Execution
 
-Key Features
 
-- Page Object Model (POM)
-- Cross-Browser Testing
-- Reusable Test Scripts
-- HTML Reporting
-- Parallel Execution
-- Screenshot Capture on Failure
+KEY FEATURES
 
-Planned Test Cases
+• Page Object Model (POM)
+• Reusable Automation Components
+• Cross-Browser Testing
+• Parallel Test Execution
+• HTML Reporting
+• Screenshot Capture on Failure
+• Scalable Framework Design
+• Assertion-Based Validation
+
+
+PLANNED TEST EXECUTION
 
 Core Test Scenarios      : 40
 Browser Configurations   : 3
-Total Test Cases         : 120
+Total Planned Tests      : 120
 
-Getting Started
+
+GETTING STARTED
 
 Prerequisites
 
-- Node.js v18+
-- npm v9+
-- VS Code
+• Node.js v18+
+• npm v9+
+• Visual Studio Code
 
-Installation
+
+INSTALLATION
 
 npm install
 
 npx playwright install
 
-Running Tests
 
+RUNNING TESTS
+
+Run All Tests
 npm test
 
+Run Tests in Headed Mode
 npm run test:headed
 
+Open HTML Report
 npx playwright show-report
 
-Conclusion
 
-This project demonstrates an enterprise-level automation testing framework using Playwright with features like Page Object Model (POM), reusable automation scripts, cross-browser testing, and automated reporting for efficient UI testing.
+CONCLUSION
+
+This project demonstrates a scalable and enterprise-level UI Automation Testing Framework using Playwright. It showcases modern automation practices including Page Object Model (POM), reusable test architecture, automated reporting, and cross-browser execution for efficient and reliable software testing.
