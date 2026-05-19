@@ -1,42 +1,115 @@
-CAPSTONE PROJECT PROPOSAL
+Wipro Capstone Project
 
-Project Title:
-E-Commerce UI Automation Testing Framework Using Playwright
+Playwright | JavaScript | Cross-Browser Testing | HTML Reporting
 
-Website Details:
-- Website Name: SauceDemo (Swag Labs)
-- Website URL: https://www.saucedemo.com
-- Automation Tool: Playwright
-- Language Used: JavaScript / TypeScript
+Project Overview
 
+This project is an enterprise-level UI Automation Testing Framework developed using Playwright for the SauceDemo (Swag Labs) e-commerce application. The framework validates important workflows such as login authentication, product sorting, cart management, checkout validation, order calculations, and cross-browser execution.
 
-Objective:
-The objective of this project is to build a scalable End-to-End UI Automation Testing Framework using Playwright for the SauceDemo e-commerce application. The framework will validate important user workflows such as login, product sorting, cart operations, checkout validation, order calculations, and cross-browser execution.
+Detail                    Info
 
+Target Site               https://www.saucedemo.com
+Framework                 Playwright v1.4x+
+Language                  JavaScript / TypeScript
+Pattern                   Page Object Model (POM)
+Reports                   Playwright HTML Report
+Browsers                  Chromium, Firefox, WebKit
+Total Tests               120 Test Cases
 
-Modules Included:
-- Authentication and Security: Valid login, invalid login, session handling, and error validation.
-- Product Catalog and Sorting: Product sorting, product details, and catalog validation.
-- Cart Operations: Add/remove items and cart badge validation.
-- Checkout Validation: Form validation and error message verification.
-- Order Calculations: Subtotal, tax, and total amount validation.
-- Cross-Browser Testing: Execution on Chromium, Firefox, and WebKit.
+Project Structure
 
+project/
+│
+├── pages/
+│   ├── LoginPage.js
+│   ├── ProductPage.js
+│   ├── CartPage.js
+│   ├── CheckoutPage.js
+│   └── OrderPage.js
+│
+├── tests/
+│   ├── auth.spec.js
+│   ├── product.spec.js
+│   ├── cart.spec.js
+│   ├── checkout.spec.js
+│   └── order.spec.js
+│
+├── utils/
+│   ├── helper.js
+│   └── testData.js
+│
+├── playwright.config.js
+├── package.json
+└── README.md
 
-Key Features:
-- Page Object Model (POM) Architecture
+Services & Test Coverage
+
+1. Authentication & Security
+   - Valid login
+   - Invalid login
+   - Session handling
+   - Error validation
+
+2. Product Catalog & Sorting
+   - Product sorting
+   - Product details
+   - Catalog validation
+
+3. Cart Operations
+   - Add/remove items
+   - Cart badge validation
+
+4. Checkout Validation
+   - Form validation
+   - Error message verification
+
+5. Order Calculations
+   - Subtotal validation
+   - Tax validation
+   - Total amount validation
+
+6. Cross-Browser Testing
+   - Execution on Chromium
+   - Execution on Firefox
+   - Execution on WebKit
+
+Key Features
+
+- Page Object Model (POM)
 - Cross-Browser Testing
 - Reusable Test Scripts
 - HTML Reporting
 - Parallel Execution
 - Screenshot Capture on Failure
 
+Planned Test Cases
 
-Planned Test Cases:
-- Core Test Scenarios: 40
-- Browser Configurations: 3
-- Total Test Cases: 120
+Core Test Scenarios      : 40
+Browser Configurations   : 3
+Total Test Cases         : 120
 
+Getting Started
 
-Conclusion:
-This project demonstrates an enterprise-level automation testing framework using Playwright with features like POM architecture, cross-browser testing, reusable components, and automated reporting for efficient UI testing.
+Prerequisites
+
+- Node.js v18+
+- npm v9+
+- VS Code
+
+Installation
+
+npm install
+
+npx playwright install
+
+Running Tests
+
+npm test
+
+npm run test:headed
+
+npx playwright show-report
+
+Conclusion
+
+This project demonstrates an enterprise-level automation testing framework using Playwright with features like Page Object Model (POM), reusable automation scripts, cross-browser testing, and automated reporting for efficient UI testing.
