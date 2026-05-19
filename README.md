@@ -1,4 +1,5 @@
-Wipro Capstone Project
+Wipro Capstone Project 
+
 Enterprise UI Automation Testing Framework using Playwright
 
 Playwright | JavaScript | Cross-Browser Testing | HTML Reporting | POM Framework
@@ -21,7 +22,7 @@ The framework is designed to automate and validate critical business workflows i
 The project follows industry-standard automation practices such as Page Object Model (POM), reusable components, parallel execution, and automated reporting.
 
 
-PROJECT DETAILS
+PROJECT DETAILS:
 
 Target Website     : https://www.saucedemo.com
 Framework          : Playwright v1.4x+
