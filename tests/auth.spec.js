@@ -40,5 +40,29 @@ test('Locked User Login Test', async ({ page }) => {
     await loginPage.login('locked_out_user', 'secret_sauce');
 
     await expect(page.locator('[data-test="error"]')).toBeVisible();
-    
+
 });    
+
+// 4. Empty Username Test
+test('Empty Username Test', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    await loginPage.gotoLoginPage();
+    await loginPage.login('', 'secret_sauce');
+    await expect(page.locator('[data-test="error"]')).toBeVisible();
+});
+
+// 5. Empty Password Test
+test('Empty Password Test', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    await loginPage.gotoLoginPage();
+    await loginPage.login('standard_user', '');
+    await expect(page.locator('[data-test="error"]')).toBeVisible();
+});
+
+// 6. Empty Credentials Test
+test('Empty Credentials Test', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    await loginPage.gotoLoginPage();
+    await loginPage.login('', '');
+    await expect(page.locator('[data-test="error"]')).toBeVisible();
+});
